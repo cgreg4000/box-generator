@@ -31,8 +31,8 @@ const BoxForm = () => {
             </form>
             <div className='flex'>
             {
-                boxList.map( box => {
-                    return <div className='m-3' style={{backgroundColor: box.colorInput, height: box.sizeInput, width: box.sizeInput}}>
+                boxList.map( (box, i) => {
+                    return <div key={i} className='m-3' style={{backgroundColor: box.colorInput, height: box.sizeInput, width: box.sizeInput}}>
                         </div>
                     }
                 )
